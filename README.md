@@ -15,7 +15,7 @@ Na resolução destes exercícios deve ser utilizada a Linguagem de Programaçã
 - Considere a implementação de funções para melhorar a legibilidade, evitar a duplicação e criar soluções mais genéricas.
 
 
-1.	Preencher um vetor de 8 elementos inteiros inseridos pelo utilizador. Solicite um número do teclado. Pesquisar se esse número existe no vetor. Se existir,imprimir em qual posição do vetor. Se não existir,imprimir uma mensagem que não existe.
+1. [\*]	Preencher um vetor de 8 elementos inteiros inseridos pelo utilizador. Solicite um número do teclado. Pesquisar se esse número existe no vetor. Se existir,imprimir em qual posição do vetor. Se não existir,imprimir uma mensagem que não existe.
 
 2.	Preencher um vetor x com 5 elementos inteiros pares entre número 2 a 20 inseridos pelo utilizador. Preencher um vetor y com 5 elementos inteiros ímpares de 10 a 19, inseridos pelo utilizador.  Somar os números que pertençam a mesma posição e imprimir cada resultado no ecrã, ou seja: x[0]+y[0],x[1]+y[1].
 
@@ -43,12 +43,12 @@ Na resolução destes exercícios deve ser utilizada a Linguagem de Programaçã
 
 14.	Elabore um programa que recebe um nome e imprime as 4 primeiras letras do nome.
 
-15.	Elabore um programa que recebe um nome e imprime as letras na posição impar.
+15.	[\*] Elabore um programa que recebe um nome e imprime as letras na posição impar.
 
 16.	Elabore um programa que recebe do teclado um nome e o imprime tantas vezes quantos forem seus caracteres.
 
 17.	Elabore um programa que recebe um nome do teclado e imprime-o dez vezes.
 
-18.	Elabore um programa que que solicite um nome e escreve-o de trás para a frente.
+18.	[\*] Elabore um programa que que solicite um nome e escreve-o de trás para a frente sem utilizar uma string auxiliar.
 
-
+19.	[\*] Elabore um programa que que solicite um texto e retire todos os espaços em branco desse texto sem utilizar uma string auxiliar.
