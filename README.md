@@ -41,11 +41,11 @@ Na resolução destes exercícios deve ser utilizada a Linguagem de Programaçã
 
 13.	Criar um algoritmo que lê duas matrizes M(4,6) e N(4,6) e cria uma matriz que seja o produto de M por N.
 
-14.	Elabore um programa que recebe um nome e imprime as 4 primeiras letras do nome.
+14.	[\*] Elabore um programa que recebe um nome e imprime as 4 primeiras letras do nome.
 
-15.	Elabore um programa que recebe um nome e imprime as letras na posição impar.
+15.	[\*] Elabore um programa que recebe um nome e imprime as letras na posição impar.
 
-16.	Elabore um programa que recebe do teclado um nome e o imprime tantas vezes quantos forem seus caracteres.
+16.	[\*] Elabore um programa que recebe do teclado um nome e o imprime tantas vezes quantos forem seus caracteres.
 
 17.	Elabore um programa que recebe um nome do teclado e imprime-o dez vezes.
 
