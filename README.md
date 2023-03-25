@@ -1,54 +1,85 @@
 **UNIVERSIDADE LUSÓFONA DE HUMANIDADES E TECNOLOGIAS**
 
-*Linguagens de Programação I - 2019/2020*
+*Linguagens de Programação I*
 
-# Ficha de Exercícios - 4: Vetores
+# Ficha de Exercícios 4 - Funções
 
-Na resolução destes exercícios deve ser utilizada a Linguagem de Programação C. Para além da correta implementação dos requisitos, tenha em conta os seguintes aspetos:
+> Na resolução destes exercícios deve ser utilizada a Linguagem de Programação C. Para além da correta implementação dos requisitos, tenha em conta os seguintes aspetos:
+>* O código apresentado deve ser bem indentado. 
+>* O código deve compilar sem erros ou *warnings* utilizando o *gcc* com as seguintes flags:
+>* `-Wall -Wextra -Wpedantic -Wvla -g`
+>* Tenha em atenção os nomes dados das variáveis, para que sejam indicadores daquilo que as mesmas vão conter.
+>* Evite o uso de constantes mágicas. 
+>* Evite duplicação de código. 
 
-- O código apresentado deve ser bem indentado. 
-- O código deve compilar sem erros ou *warnings* utilizando o *gcc* com as seguintes flags:
-- `gcc -Wall -Wextra -Wpedantic -ansi -g exercicio1.c -o exercicio1`
-- Tenha em atenção os nomes dados das variáveis, para que sejam indicadores daquilo que as mesmas vão conter.
-- Evite o uso de constantes mágicas. 
-- Evite duplicação de código. 
-- Considere a implementação de funções para melhorar a legibilidade, evitar a duplicação e criar soluções mais genéricas.
+## Funções simples
+
+1. Considere as seguintes funções que retornam o máximo entre dois inteiros e o mínimo entre dois inteiros, respectivamente:
+```C
+int max2(int a, int b)
+{
+    return a > b ? a : b;
+}
+int min2(int a, int b)
+{
+    return a > b ? b : a;
+}
+```
+Considere também as funções seguintes que retornam os valores máximo e mínimo entre 3 números inteiros:
+```C
+int max3(int a, int b, int c)
+{
+	return max2(a, max2(b, c));
+}
+
+int min3(int a, int b, int c)
+{
+	return min2(a, min2(b, c));
+}
+```
+
+  1.1 Crie uma função com o nome `med3` que utiliza (invoca) as funções `max3` e `max2`, e que retorna o valor do meio (segundo maior) entre 3 números inteiros recebidos como parâmetro.
+
+  1.2 Crie duas funções com o nome `max4` e `min4` que utilizam as funções anteriores e que retornam, respectivamente, o valor máximo e mínimo, entre 4 valores inteiros recebidos como parâmetro.
+  
+  1.3 Crie duas funções: com o nome `med4_1` e `med4_2` que utilizam as funções desenvolvidas anteriormente, e que retornam, o segundo maior valor e o segundo menor valor, respectivamente, entre 4 valores recebidos como parâmetros.
+  
+  1.4 Por fim experimente a seguinte função `main` que pede 4 números ao utilizador e os apresenta por ordem crescente:
+  
+  ```C
+int main(void)
+{
+	int x, y, z, w;
+	puts("Introduza 4 numeros inteiros:\n>");
+	if (scanf("%d %d %d %d", &x, &y, &z, &w) != 4)
+	{
+		puts("erro na introducao dos numeros");
+		return 0;
+	}
+
+	puts("Numeros por ordem");
+	printf("%d\n", max4(x, y, z, w));
+	printf("%d\n", med4_1(x, y, z, w));
+	printf("%d\n", med4_2(x, y, z, w));
+	printf("%d\n", min4(x, y, z, w));
+
+	return 0;
+}
+```
 
 
-1. [\*]	Preencher um vetor de 8 elementos inteiros inseridos pelo utilizador. Solicite um número do teclado. Pesquisar se esse número existe no vetor. Se existir,imprimir em qual posição do vetor. Se não existir,imprimir uma mensagem que não existe.
+## Recursividade
 
-2.	[\*] Preencher um vetor x com 5 elementos inteiros pares entre número 2 a 20 inseridos pelo utilizador. Preencher um vetor y com 5 elementos inteiros ímpares de 10 a 19, inseridos pelo utilizador.  Somar os números que pertençam a mesma posição e imprimir cada resultado no ecrã, ou seja: x[0]+y[0],x[1]+y[1].
+8. Crie uma função que receba 2 números e retorne o maior valor.
 
-3. [\*] Preencher um vetor de 8 elementos inteiros inseridos pelo utilizador. Mostrar o vetor e informar quantos números são maiores que 30. Somar esses números. Somar todos os números.
+9.	Crie uma função que receba 2 números e retorne o menor valor.
 
-4. [\*] Preencher um vetor de 8 elementos inteiros inseridos pelo utilizador. Mostrar o vetor na horizontal, espaçando os valores por tabs (\t). Calcular a média dos valores do vetor. Mostrar quantos números são múltiplos de 5. Quantos números são maiores que 10 e menores que 30. Qual o maior número do vetor.
+10.	Crie uma função que receba 3 números e retorne o maior valor, use a função da questão 8.
 
-5.	Preencher uma matriz com 3 nomes inseridos pelo utilizador, e mostrar quantas letras A (total de maiúsculas e minúsculas) e E  (idem) têm nos 3 nomes.
+11.	Crie uma função que receba 3 números e retorne o menor valor, use a função da questão 9.
 
-6. Criar um algoritmo que lê um conjunto de 30 valores do teclado e os coloca em 2 vetores conforme estes valores forem pares ou ímpares. O tamanho do vetor é de 5 posições. Se algum vetor estiver cheio, escrevê-lo. Terminada a leitura escrever o conteúdo dos dois vetores. Cada vetor pode ser preenchido tantas vezes quantas for necessário.
+12.	Crie uma função chamada Dado() que retorna, através de sorteio, um número de 1 até 6.
 
-7.	Armazenar nos vetores Nomes, PR1 e PR2 o nome e nota de duas provas de 6 alunos. Guardar no vetor Media a média de cada aluno e imprimir aprovado se a média for maior que 5 e reprovado se a média for menor ou igual a 5. OBS.: 2 vetores para as notas tipo float. 1 vetor para os nomes. 1 vetor para a média. 1 vetor para situação.
+13.	Use a função da questão anterior e lance o dado mil vezes. Conte quantas vezes cada número saiu.
+A probabilidade deu certo? Ou seja, a percentagem dos números foi parecida?
 
-8.	Preencher um vetor com 5 números e guardar o cubo dos números em outro vetor. Mostrar os dois vetores.
-
-9.	Preencher um vetor com os numeros 10 a 20, e depois mostrar os elementos pares do vetor de trás prá frente.
-
-10.	Criar um algoritmo que leia os elementos de uma matriz inteira de 4 x 4 e imprima os elementos da diagonal principal.
-
-11.	Criar um algoritmo que leia os elementos de uma matriz inteira de 3 x 3 e imprima todos os elementos, exceto os elementos da diagonal principal.
-
-12.	Criar um algoritmo que leia os elementos de uma matriz inteira de 3 x 3 e adicione a outra matriz o resultado da multiplicação por 2 de cada elemento da primeira matriz.
-
-13.	Criar um algoritmo que lê duas matrizes M(4,6) e N(4,6) e cria uma matriz que seja o produto de M por N.
-
-14.	[\*] Elabore um programa que recebe um nome e imprime as 4 primeiras letras do nome.
-
-15.	[\*] Elabore um programa que recebe um nome e imprime as letras na posição impar.
-
-16.	[\*] Elabore um programa que recebe do teclado um nome e o imprime tantas vezes quantos forem seus caracteres.
-
-17.	Elabore um programa que recebe um nome do teclado e imprime-o dez vezes.
-
-18.	[\*] Elabore um programa que que solicite um nome e escreve-o de trás para a frente sem utilizar uma string auxiliar.
-
-19.	Elabore um programa que que solicite um texto e retire todos os espaços em branco desse texto sem utilizar uma string auxiliar.
