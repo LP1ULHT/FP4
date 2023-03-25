@@ -70,16 +70,14 @@ int main(void)
 
 ## Recursividade
 
-8. Crie uma função que receba 2 números e retorne o maior valor.
+1. Defina uma função recursiva para calcular o máximo divisor comum de dois números inteiros não negativos a e b, usando o algoritmo de [Euclides](https://pt.wikipedia.org/wiki/Algoritmo_de_Euclides), definido da seguinte forma:
+```
+mdc(a,b) = a se b = 0,
+mdc(a,b) = mdc(b,a mod b) se b > 0,
+mdc(a,b) = mdc(a,−b) se b < 0
+```
 
-9.	Crie uma função que receba 2 números e retorne o menor valor.
+2. Crie uma função recursiva que lê números do teclado enquando os números introduzidos forem positivos. Quando encontrar um número negativo, apresenta os números lidos pela ordem inversa.
 
-10.	Crie uma função que receba 3 números e retorne o maior valor, use a função da questão 8.
-
-11.	Crie uma função que receba 3 números e retorne o menor valor, use a função da questão 9.
-
-12.	Crie uma função chamada Dado() que retorna, através de sorteio, um número de 1 até 6.
-
-13.	Use a função da questão anterior e lance o dado mil vezes. Conte quantas vezes cada número saiu.
-A probabilidade deu certo? Ou seja, a percentagem dos números foi parecida?
+3. Crie uma função recursiva que calcula o resultado da multiplicação entre dois inteiros recebidos como parâmetro.
 
