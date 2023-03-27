@@ -66,7 +66,37 @@ int main(void)
 	return 0;
 }
 ```
-
+2. Considere o jogo de crianças conhecido como [FIZZBUZZ](https://en.wikipedia.org/wiki/Fizz_buzz). Neste jogo todos os números múltiplos de 3 são substituídos pela palavra FIZZ enquanto que todos os números múltiplos de 5 são substituídos pela palavra BUZZ. Os números múltiplos de 3 e 5 são substituídos pela palavra FIZZBUZZ. O objetivo deste exercício é construir um programa que dado um número imprime no ecrã a sequência FIZZBUZZ até esse número. Por exemplo, para o número 25:
+```
+1
+2
+FIZZ
+4
+BUZZ
+FIZZ
+7
+8
+FIZZ
+BUZZ
+11
+FIZZ
+13
+14
+FIZZBUZZ
+16
+17
+FIZZ
+19
+BUZZ
+FIZZ
+22
+23
+FIZZ
+BUZZ
+```
+2.1 Escreva uma função que dado um número imprime no ecrã a palavra FIZZ, BUZZ ou FIZZBUZZ conforme as regras do jogo.
+2.2 Escreva uma função, usando um loop, que chama a função do ponto anterior, até terminar a sequência.
+2.3 Escreva uma função que implemente a mesma funcionalidade do ponto anterior utilizando recursividade.
 
 ## Recursividade
 
