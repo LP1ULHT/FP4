@@ -100,6 +100,8 @@ BUZZ
 
 2.3 Escreva uma função que implemente a mesma funcionalidade do ponto anterior utilizando recursividade.
 
+3. Escreva uma função que recebe um caracter, verifica se este é minúsculo e converte para maíusculo através do `return` da função. Se o caracter for maíusculo converte para minúsculo.
+
 ## Recursividade
 
 1. Defina uma função recursiva para calcular o máximo divisor comum de dois números inteiros não negativos a e b, usando o algoritmo de [Euclides](https://pt.wikipedia.org/wiki/Algoritmo_de_Euclides), definido da seguinte forma:
