@@ -95,7 +95,9 @@ FIZZ
 BUZZ
 ```
 2.1 Escreva uma função que dado um número imprime no ecrã a palavra FIZZ, BUZZ ou FIZZBUZZ conforme as regras do jogo.
+
 2.2 Escreva uma função, usando um loop, que chama a função do ponto anterior, até terminar a sequência.
+
 2.3 Escreva uma função que implemente a mesma funcionalidade do ponto anterior utilizando recursividade.
 
 ## Recursividade
